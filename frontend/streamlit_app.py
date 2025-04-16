@@ -3,7 +3,12 @@ import requests
 
 st.set_page_config(page_title="DocuBot", layout="centered")
 st.title("📄 DocuBot – Ask Questions About Your PDF")
-
+st.markdown(
+    """
+    <div style='text-align: right; font-size: 14px; color: gray;'>
+        Built with ❤️ by <strong>Julia Cheng</strong> © 2025
+    </div>
+    """, unsafe_allow_html=True)
 # Store upload state
 if "pdf_uploaded" not in st.session_state:
     st.session_state["pdf_uploaded"] = False
